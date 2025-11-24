@@ -1,0 +1,10 @@
+\section{Experiments}
+
+\subsection{Experimental Setup}
+Experiments are conducted using the Pennylane and Qiskit simulators on a classical CPU backend. The QNN uses four qubits and three variational layers. Baseline models include logistic regression, LSTM, and fine-tuned BERT.
+
+\subsection{Train--Test Split}
+The dataset is divided into 80\% training, 10\% validation, and 10\% testing. PCA reduces embeddings to eight dimensions to match the four-qubit input requirement.
+
+\subsection{Evaluation Metrics}
+Model performance is assessed using accuracy, precision, recall, and F1-score. Adversarial accuracy is computed by evaluating performance after applying perturbations. All results are averaged over five runs for stability.

@@ -1,0 +1,18 @@
+\section{Results}
+
+\subsection{Baseline Results}
+The QNN achieves a clean accuracy of 93.1\%, comparable to classical baselines such as LSTM and logistic regression and within 5\% of BERT-based models.
+
+\subsection{Adversarial Robustness}
+Under synonym-substitution attacks, performance degradation is observed as follows:
+\begin{itemize}
+    \item Logistic Regression: 22\% drop
+    \item LSTM: 17\% drop
+    \item BERT: 11\% drop
+    \item QNN: 8\% drop
+\end{itemize}
+
+With adversarial training, the QNN robustness improves further, reducing accuracy loss to 4\%, corresponding to a 9\% robustness gain.
+
+\subsection{Analysis}
+Quantum encoding is observed to generate smoother decision boundaries, making the QNN less sensitive to minimal perturbations. This contributes to enhanced adversarial robustness compared to classical models.

@@ -1,0 +1,13 @@
+\section{Related Work}
+
+\subsection{Classical Fake News Detection}
+Classical machine learning techniques such as logistic regression, support vector machines, and random forests were among the earliest methods used for fake news detection. With advances in deep learning, convolutional neural networks (CNNs), recurrent neural networks (RNNs), and long short-term memory (LSTM) networks demonstrated improved performance by capturing contextual and sequential dependencies. Transformer-based architectures, particularly BERT and its variants, currently represent the state of the art due to their bidirectional contextual encoding capabilities.
+
+\subsection{Quantum Approaches to Text Classification}
+Quantum machine learning has recently emerged as a promising paradigm. Variational Quantum Circuits (VQCs) and QNNs have been applied to small-scale text classification tasks. Prior work such as QMFND has demonstrated the feasibility of using quantum circuits to detect fake news. Other studies have explored hybrid classical--quantum workflows where classical feature extractors feed compressed embeddings into quantum circuits. Despite these contributions, existing research focuses primarily on baseline accuracy and ignores robustness concerns.
+
+\subsection{Adversarial Attacks and Defenses in NLP}
+Adversarial attacks in natural language processing typically involve minimal perturbations such as synonym replacement, paraphrasing, or character-level edits that maintain semantic similarity but alter model output. Defense methods include adversarial training, input preprocessing, embedding regularization, and detection mechanisms. While classical models have been extensively studied under adversarial conditions, no prior work systematically evaluates quantum models for robustness.
+
+\subsection{Research Gap}
+Although QNNs offer theoretical advantages in representational capacity, their behaviour under adversarial perturbations remains uninvestigated. This work is the first to conduct a comprehensive robustness analysis of QNN-based fake news detection systems.
